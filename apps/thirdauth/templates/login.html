@@ -78,3 +78,12 @@
 	</div>
 </body>
 </html>
+{}
+{% if user and not user.is_anonymous %}
+      <meta http-equiv="REFRESH" content="0; url=http://127.0.0.1:8000/panel">
+   {% else %}
+      <div id="browse_app" class="text-center">
+        <a class="btn btn-large btn-info" href="{% url 'social:begin' 'google-oauth2' %}?next={{ request.path }}">Login with NYU Account</a>
+      </div>
+   {% endif %}
+   {}
