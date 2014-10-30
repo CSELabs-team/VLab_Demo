@@ -8,5 +8,5 @@ def social_login(request):
                            {'request': request,
                             'user': request.user})
 
-   return render_to_response('vlablogin.html',
+   return render_to_response('login.html',
                              context_instance=context)
