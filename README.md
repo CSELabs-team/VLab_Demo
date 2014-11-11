@@ -1,5 +1,8 @@
 VLab Project Demo
 
-Developer: 
+Developers: 
 	Luming Nie
 	Pujitha Gade
+	Swetha Chauah
+	
+	
