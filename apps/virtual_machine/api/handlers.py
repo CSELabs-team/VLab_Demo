@@ -19,7 +19,6 @@ class WakeUpVMHandler(APIView):
 
 
 class VMStatusHandler(APIView):
-
     """
     APIs for getting Virtual Machine status.
     """
