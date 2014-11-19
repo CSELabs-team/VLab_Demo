@@ -3,3 +3,4 @@ djangorestframework==2.3.13
 requests
 python-social-auth
 django-celery
+djangorestframework

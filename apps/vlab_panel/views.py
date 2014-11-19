@@ -4,6 +4,9 @@ from django.template import RequestContext, loader
 from django.contrib.auth.models import User
 from django.contrib.auth import logout
 
+# task queue module:
+import tasks
+
 def panel_index(request):
     """
     Panel main page view function.
@@ -14,12 +17,17 @@ def panel_index(request):
 
     # authentication:
     if not hasattr(request.user, 'email'):
-		return redirect('http://127.0.0.1:8000')
+        return redirect('http://127.0.0.1:8000')
 
     user_email = request.user.email
     user = User.objects.filter(username=request.user.username, email=user_email)
 
     template = loader.get_template('panel_base.html')
+
+    # TODO: test task queue:
+    result = tasks.add.delay(1, 1)
+    print "Test the task queue function with 1+1:"
+    print result.get()
 
     context = RequestContext(request, {
         'username': request.user.username,
