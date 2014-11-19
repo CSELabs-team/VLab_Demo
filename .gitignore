@@ -1,0 +1,17 @@
+*.idea
+*/settings.py
+vlab_demo/settings.py
+vlab_demo/dev_settings.py
+dev_settings.py
+settings.py
+*.pyc
+*.pyo
+*.DS_Store
+.project
+.pydevproject
+*.jar
+*.bin
+apps/build
+*.log
+node_modules/
+.idea/*
