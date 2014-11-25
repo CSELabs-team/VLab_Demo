@@ -1,6 +1,8 @@
 from rest_framework.views import APIView
 import logging
 
+# TODO: Implement the Paramiko functions into the below Handler
+
 class WakeUpVMHandler(APIView):
     """
     Class based API for Wake Up virtual machine.

@@ -26,8 +26,7 @@ def panel_index(request):
 
     # TODO: test task queue:
     result = tasks.add.delay(1, 1)
-    print "Test the task queue function with 1+1:"
-    print result.get()
+    print "Test the task queue function with 1+1:", result.get()
 
     context = RequestContext(request, {
         'username': request.user.username,
@@ -37,4 +36,5 @@ def panel_index(request):
     return HttpResponse(template.render(context))
 
 
-# TODO: Write Functions for calling Virtual Machine APIs here:
+# TODO: Write Functions for calling Virtual Machine APIs/Execute backend script here:
+# TODO: and the Virtual Machine API contains Paramiko functions

@@ -27,6 +27,8 @@ Technology Stacks:
         python-social-auth
     3. Task Queue:
         Celery.py + RabbitMQ
+    4. SSH Remote Execution:
+
 
 Project Structure:
     # to be completed
