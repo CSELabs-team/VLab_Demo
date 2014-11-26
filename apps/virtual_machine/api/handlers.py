@@ -2,6 +2,14 @@ from rest_framework.views import APIView
 import logging
 
 # TODO: Implement the Paramiko functions into the below Handler
+class ParamikoSSHHandler():
+    """
+    Paramiko SSH connection handler.
+    This class will be initialized in other VM API handlers for SSH connection.
+    """
+    pass
+
+
 
 class WakeUpVMHandler(APIView):
     """
