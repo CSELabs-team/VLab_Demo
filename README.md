@@ -5,9 +5,9 @@ interface for clients(students).  <br> <br>
 <br>
 
 Developers: <br>
-	Luming Nie <br>
-	Pujitha Gade <br>
-	Swetha Chauah <br>
+&emsp;&emsp; Luming Nie <br>
+&emsp;&emsp; Pujitha Gade <br>
+&emsp;&emsp; Swetha Chauah <br>
 
 <br>
 
@@ -19,20 +19,21 @@ Required libraries are recorded in "requirements.txt" and can be "pip installed"
 Temporary Documentation:
 Technology Stacks: <br>
     1. Base: <br>
-        Django 1.6 <br>
-        Python 2.7 <br>
-        MySQL <br>
-        Oauth2.0(NYU Gmail account) <br>
-        VNC <br>
-        javascript <br>
-        Bootstrap <br>
+&emsp;&emsp; Django 1.6 <br>
+&emsp;&emsp; Python 2.7 <br>
+&emsp;&emsp; MySQL <br>
+&emsp;&emsp; Oauth2.0(NYU Gmail account) <br>
+&emsp;&emsp; VNC <br>
+&emsp;&emsp; javascript <br>
+&emsp;&emsp; Bootstrap <br>
     2. Third Party Libraries: <br>
-        REST framework <br>
-        requests <br>
-        python-social-auth <br>
+&emsp;&emsp; REST framework <br>
+&emsp;&emsp; requests <br>
+&emsp;&emsp; python-social-auth <br>
     3. Task Queue: <br>
-        Celery.py + RabbitMQ <br>
+&emsp;&emsp; Celery.py + RabbitMQ <br>
     4. SSH Remote Execution: <br>
+&emsp;&emsp; Paramiko Library (for executing remote bash scripts on computing nodes)
 
 <br>
 
@@ -43,6 +44,6 @@ Project Structure: <br>
 
 References: <br>
 1.Steps to setup Django-Celery in project: <br>
-    http://docs.celeryproject.org/en/2.5/django/first-steps-with-django.html <br>
+&emsp;&emsp; http://docs.celeryproject.org/en/2.5/django/first-steps-with-django.html <br>
 2.Rest framework documentation: <br>
-    http://www.django-rest-framework.org <br>
+&emsp;&emsp; http://www.django-rest-framework.org <br>
