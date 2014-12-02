@@ -1,14 +1,24 @@
 from rest_framework.views import APIView
 import logging
+import paramiko
 
-# TODO: Implement the Paramiko functions into the below Handler
+# TODO: Implement and test the Paramiko functions into the below Handler
 class ParamikoSSHHandler():
     """
     Paramiko SSH connection handler.
     This class will be initialized in other VM API handlers for SSH connection.
     """
-    pass
+    # This is the test local connection of Paramiko
+    def __init__(self):
+        self.client = paramiko.SSHClient()
+        self.client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+        self.username = 'nieluming'
+        self.password = '888777419036'
+        self.client.connect('127.0.0.1', username=self.username, password=self.password)
+        self.stdin, self.stdout, self.stderr = self.client.exec_command('ls -l')
 
+    def print_message(self):
+        print self.stdin, self.stdout, self.stderr
 
 
 class WakeUpVMHandler(APIView):

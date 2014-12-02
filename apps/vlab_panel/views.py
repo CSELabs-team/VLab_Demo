@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from django.template import RequestContext, loader
 from django.contrib.auth.models import User
 from django.contrib.auth import logout
+from apps.virtual_machine.api.handlers import ParamikoSSHHandler
 
 # task queue module:
 import tasks
@@ -27,6 +28,9 @@ def panel_index(request):
     # TODO: test task queue:
     result = tasks.add.delay(1, 1)
     print "Test the task queue function with 1+1:", result.get()
+    # TODO: test Paramiko on local server:
+    paramiko = ParamikoSSHHandler()
+    print "Test Paramiko on local server:", paramiko.print_message()
 
     context = RequestContext(request, {
         'username': request.user.username,
