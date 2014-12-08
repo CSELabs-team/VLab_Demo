@@ -7,6 +7,7 @@ class ParamikoSSHHandler():
     """
     Paramiko SSH connection handler.
     This class will be initialized in other VM API handlers for SSH connection.
+    This class object will be used to instantiate Paramiko SSH connection.
     """
     # This is the test local connection of Paramiko
     def __init__(self):
