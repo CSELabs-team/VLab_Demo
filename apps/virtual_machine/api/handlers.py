@@ -13,6 +13,7 @@ class ParamikoSSHHandler():
     def __init__(self):
         self.client = paramiko.SSHClient()
         self.client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+        # The below configurations is based on Luming's Local computer, and should be modified
         self.username = 'nieluming'
         self.password = '888777419036'
         self.client.connect('127.0.0.1', username=self.username, password=self.password)
